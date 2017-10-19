@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monoton'), local('Monoton-Regular'), url(https://fonts.gstatic.com/s/monoton/v7/y6oxFxU60dYw9khW6q8jGw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Architects Daughter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Architects Daughter Regular'), local('ArchitectsDaughter-Regular'), url(https://fonts.gstatic.com/s/architectsdaughter/v8/RXTgOOQ9AAtaVOHxx0IUBM3t7GjCYufj5TXV5VnA2p8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+html {
+	font-size: 16px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #40877f;
+}
+li .active {
+    background-color: #4CAF50;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a.selected {
+    background-color: black;
+    color: white;
+}
+
+li a:hover {
+    background-color: #ffffff;
+    opacity: .9;
+    color: #40877f;
+}
+.background {
+    background-image: url("../images/004.jpg");
+}
+footer { 
+    color: white;
+	background: #40877f;
+}
+.layer {
+    background-color: #ffffff;
+    opacity: 0.9;
+    padding: 10px;
+    border: #fff 3px;
+    margin: 2%;
+    border-radius: 15px;
+	font-family: 'Architects Daughter', serif;
+}
+.opaclayer {
+    background-color: #ffffff;
+    opacity: 1;
+    padding: 10px;
+    border: #fff 3px;
+    margin: 2%;
+    border-radius: 15px;
+	font-family: 'Architects Daughter', serif;
+}
+a:hover {
+    color: blue;
+}
+h1 {
+    font-family: 'Monoton', cursive;
+}
+#screenshot1 {
+	width: 80%;
+	height: auto;
+}

@@ -1,0 +1,11 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My First HTML5 Web Page</title>
+<meta charset="utf-8">
+</head>
+<body>
+<h1>Hello World</h1>
+<p>I'm fine</p>
+</body>
+</html>
