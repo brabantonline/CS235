@@ -13,21 +13,279 @@
   </head>
   <body class="background">
     <nav>
-      <ul>
+      <ul id="menu">
         <li><a href="index.html">Index</a></li>
-        <li class="active"><a href="dictionary.html">Dictionary</a></li>
-        <li><a href="documentofintent.html">Document of Intent</a></li>
+        <li><a class="active" href="dictionary.html">Dictionary</a></li>
+        <li><a href="documentofintent.html">Document of Intent</a>
+          <ul class="sub-menu">
+            <li><a href="documentofintent.html">My CS235 Journey</a></li>
+            <li><a href="1000musicsolutions.html">New Project</a></li>
+		  </ul>
+		  </li>
         <li><a href="template.html">Template</a></li>
       </ul>
     </nav>
-    <header><h1>Dictionary</h1></header>
+    <header id="top"><h1>Dictionary</h1></header>
     <main>
-      <div class="layer">
-        <p>This is the dictionary.  Entries below</p>
+      <div>
+        <p>This is the dictionary.  Entries below</p><br><br>
       </div>
+      <div class="layer">
+        <h3>Jump links</h3>
+        <div class="jumplinks">
+          <ul>
+            <li><a href="#chap8">Chapter 8 - HTML Format</a></li>
+            <li><a href="#chap9">Chapter 9 - HTML page layout</a></li>
+            <li><a href="#chap10">Chapter 10 - Text Layout</a></li>
+            <li><a href="#chap11">Chapter 11 - Navigation</a></li>
+            <li><a href="#chap13">Chapter 13 - Tables</a></li>
+            <li><a href="#chap14">Chapter 14 - forms</a></li>
+            <li><a href="#chap15">Chapter 15 - Canvas</a></li>
+            <li><a href="#chap16">Chapter 16 - Media Support</a></li>
+            <li><a href="#chap18">Chapter 18 - Tags to Avoid</a></li>
+            <li><a href="#chap19">Chapter 19 - Rule Structures - CSS</a></li>
+            <li><a href="#chap20">Chapter 20 - Layout Formatting</a></li>
+            <li><a href="#chap21">Chapter 21 - Font and Decoration</a></li>
+            <li><a href="#chap22">Chapter 22 - Responsive Styling</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <hr />
+      <div class="layer" id="chap8">
+        <h3>Chapter 8</h3>
+        <p>  &lt;!DOCTYPE html&gt; should be the first line of code.</p>
+        <a href="#top">Top</a>
+      </div>  
+      <hr />
+      <div class="layer" id="chap9">
+        <h3>Chapter 9</h3>
+        <p><h4>&lt;!DOCTYPE html&gt;<br>&lt;Head&gt;<br>&lt;/Head&gt;<br> &lt;Body&gt;</h4>
+        <span class="indent seencolor">&lt;Header&gt;</span><br>
+        <span class="indent seencolor">&lt;/Header&gt;</span><br>
+        <span class="indent seencolor">&lt;div&gt;&lt;/div&gt;</span><br>
+        <span class="indent seencolor">&lt;footer&gt;</span><br>
+        <span class="indent seencolor">&lt;/footer&gt;</span><br>
+        <h4>&lt;/Body&gt;<br>&lt;/html&gt;</h4>
+        <br>
+        <br>
+        <p class="seencolor">This is where most things you see go.</p>
+        <a href="#top">Top</a>
+      </div>  
+      <hr />
+      <div class="layer" id="chap10">
+        <h3>Chapter 10</h3>
+        <ol><li>Ordered list starts with a number or letter &lt;ol&gt;</li></ol>
+        <ul><li>Unordered list sometimes starts with a bullet &lt;ul&gt;</li></ul>
+        <p class="indent">Both contain list items &lt;li&gt;</p>
+        <dl><dt>Definition list &lt;dl&gt;</dt><dd>Contain terms &lt;dt&gt; 
+          definitions &lt;dd&gt;</dd></dl>
+        <address id="address">Address &lt;address&gt; specifies text belonging to <a href="#address">an address.
+          This is an anchor to here.</a></address>
+             
+        <article><h4>Article &lt;article&gt;</h4><p>This whole blurb could be an awesome article that will be published
+          in various locations</p></article>
+        <aside><h4>Aside &lt;aside&gt;</h4><p>Shakespeare anyone?  Related and nested</p></aside>
+        <button type="button">And there's the Button</button>
+        <table style="border: 1px; width: 300px;"> <caption>Caption tag &lt;caption&gt; - for tables</caption></table>
+        <p>Cite &lt;cite&gt; <cite>Title of a work that's included in a document</cite></p>
+        <h4>Entities or special characters</h4>
+        <p>There are <a href="http://www.degraeve.com/reference/specialcharacters.php" target="_blank">lists available online.</a> </p>
+        <h4> Figure &lt;figure&gt; wraps an &lt;image&gt;</h4>
+        <p class="indent">Figcaption adds a caption &lt;figcaption&gt;text&lt;/figcaption&gt;&lt;/figure&gt;</p>
+        <h4>Mark &lt;/mark&gt; is a <mark>highlighter</mark></h4>
+        <h4>Meter &lt;meter value=#% &gt;description&lt;/meter&gt;</h4>
+        <h4>Nav &lt;nav&gt;</h4>
+        <p class="indent">Navigation menu links</p>
+        <h4>Progress &lt;Progress value=#&gt;</h4>
+        <p class="indent">The progress bar for whatever</p>
+        <h4>Time &lt;time&gt;</h4>
+        <p class="indent">Specifies the time such as <time datetime="2017-10-20">October 20th or something</time></p>
+        
+        
+        
+        <a href="#top">Top</a>
+      </div>  
+      <hr />
+      <div class="layer" id="chap11">
+        <h3>Chapter 11</h3>
+        <p>This is about linking and navigation</p>
+        <h4>Target</h4>
+        <p class="indent">This is used in links and the target is the attribute.</p>
+        <ul>
+          <li>_blank</li>
+          <li>_self</li>
+          <li>_parent</li>
+          <li>_top</li>
+          <li><em>framename</em></li>
+        </ul>
+        <h4>In page links</h4>
+        <p>Can be done through the use of <em>id</em>'s or <em>name</em>s</p>
+        <p class="indent"> &lt;a href=&quot;#the_destination&quot;&gt;</p>
+        <a href="#top">Top</a>
+      </div>  
+      <hr/>
+      <div class="layer" id="chap13">
+        <h3>Chapter 13</h3>
+        <p>Tables are made up of rows tr and columns</p>
+        <h4>Tables structure</h4>
+        <table>
+          <tr>
+            <th> Table Headers &lt;th&gt; in a Table Row &lt;tr&gt;</th>
+          </tr>
+          <tr>
+            <td>
+              Regular table cell &lt;td&gt; is a table row &lt;tr&gt;
+            </td>
+          </tr>
+        </table>
+        <p>and like other elements this can be styled in CSS</p>  
+        <h4>Spanning</h4>
+        <p class="indent">The process of expanding a row or column into the neighboring row</p>
+        <a href="#top">Top</a>
+      </div>  
+      <hr/>
+      <div class="layer" id="chap14">
+        <h3>Chapter 14</h3>
+        <p>Forms &lt;form&gt; are used to get information and seems pretty useless unless you're
+        writing information to an sql server or using php (other programing languages).  </p>
+        <a href="#top">Top</a>
+      </div>  
+      <hr/>
+      <div class="layer" id="chap15">
+        <h3>Chapter 15</h3>
+        <p>Canvasing is all about drawing using vectors. </p>
+        
+        <figure><canvas id="canvas" width = "500" height="400" style="border: 1px solid black;"> 
+          Error
+          </canvas><figcaption>Attempt at a smiley face...</figcaption></figure>
+        <script>
+          var canvas=document.getElementById("canvas");
+          var canvas1=canvas.getContext("2d");
+          canvas1.fillStyle= "#40877f";
+          canvas1.fillRect(100, 300, 400, 100);
+          canvas1.fillRect(100, 100, 100, 100);
+          canvas1.fillStyle= "#d55a48";
+          canvas1.fillRect(400, 100, 100, 100);
+        </script>
+        <br>
+        <a href="#top">Top</a>
+      </div>  
+      <hr/>
+      <div class="layer" id="chap16">
+        <h3>Chapter 16</h3>
+        <p>Embeding video and audio in webpage</p>
+        <h4>Video</h4>
+        <p class="indent">Embeding videos is a bit tricky as you have to have a few different
+        formats in order to be able to provide video to all the different web browsers</p>
+        <a href="#top">Top</a>
+      </div>  
+      <hr/>
+      <div class="layer" id="chap18">
+        <h3>Chapter 18</h3>
+        <h4>Tags to avvoid</h4>
+        <ul>
+          <li>&lt;b&gt;</li>
+          <li>&lt;i&gt;</li>
+          <li>&lt;strong&gt;</li>
+          <li>&lt;font&gt;</li>
+          <li>&lt;br&gt;</li>
+        </ul>
+        <p>Try using styling through CSS</p>
+        <a href="#top">Top</a>
+      </div>  
+      <hr/>
+      <div class="layer" id="chap19">
+        <h3>Chapter 19</h3>
+        <p>Styling can be done in HTML on an element or in line in html with 
+          &lt;style&gt; STYLE &lt;/style&gt; or through linked CSS stylesheets</p>
+        <dl>
+          <dt>Classes</dt>
+          <dd>Used a bunch and is styled .class</dd>
+          <dt>ID</dt>
+          <dd>used once and hyperlinked and styled as #id</dd>
+        </dl>
+        <p>Styling is done with a selector and declarations</p>
+        <figure><img src="https://milnepublishing.geneseo.edu/themissinglink/wp-content/uploads/sites/10/2016/12/Figure_22_fmt.png" alt="CSS Styling Syntax"/>
+          <figcaption>Image from <cite><a href="https://milnepublishing.geneseo.edu/themissinglink/">The Missing Link</a> by Michael Mendez</cite></figcaption></figure>
+        <a href="#top">Top</a>
+      </div>  
+      <hr/>
+      <div class="layer" id="chap20">
+        <h3>Chapter 20</h3>
+        <h4>Layout Formating</h4>
+        <dl>
+          <dt>
+            Box Model
+          </dt>
+          <dd>
+            Is the padding, boarder and margin around an object
+          </dd>
+        </dl>
+        <p class="indent">Backgrounds and background images can be assigned to these items
+        as well</p>
+        <dl>
+          <dt>
+            Float
+          </dt>
+          <dd>
+            Moving an object around within the parent object.
+          </dd>
+          <dt>
+            Position
+          </dt>
+          <dd>
+            Change an objects location in the browser window without changing the location of your code.
+          </dd>
+          <dt>
+            Z-Index
+          </dt>
+          <dd>
+            Moves the object from back to front.
+          </dd>
+        </dl>
+        <p>The mouse cursor can also be changed, but the book cautions against it
+        as it might make the user believe their system is gridlocked.</p>
+        <a href="#top">Top</a>
+      </div>  
+      <hr/>
+      <div class="layer" id="chap21">
+        <h3>Chapter 21</h3>
+        <h4>Font and Text Formatting</h4>
+        <p>The font style color, background and size can be changed.  
+        There are even transformations like</p>
+        <dl>
+          <dt>
+            font-variant
+          </dt>
+          <dd>
+            Allows you to style text to small-caps
+          </dd>
+        </dl>
+          <p> order of rules matters with link selectors when styling</p>
+          <ol>
+            <li>:link</li>
+            <li>:visited</li>
+            <li>:hover</li>
+            <li>:active</li>
+          </ol>
+          <p>W3C also puts out a <a href="https://www.w3.org/standards/webdesign/accessibility">list of items to consider in making your
+            site more accessible</a></p>
+        <a href="#top">Top</a>
+      </div>  
+      <hr/>
+      <div class="layer" id="chap22">
+        <h3>Chapter 22</h3>
+        <h4>Responsive Styling</h4>
+        <p class="indent">Is the process of styling in order to try to meet the needs of various screen size requirements</p>
+        <p>This is done with <em>@media only screen and</em> followed by the given criteria.</p>
+        <a href="#top">Top</a>
+      </div>  
+      <hr/>
     </main>
     <footer>
-      <p>Created for CS235</p>
+      <div>&copy;2017 by Jerome Brabant</div>
+      <div><a href="mailto:jerome.brabant@cayuga-cc.edu">jerome.brabant@cayuga-cc.edu</a></div>
     </footer>
   </body>
 </html>
